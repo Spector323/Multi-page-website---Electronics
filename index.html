@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доска объявлений</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <div class="header-menu">
+                <!-- Логотип -->
+                <div class="logo">
+                    <img src="./img/header/Logo.svg" alt="Dily.ru">
+                </div>
+        
+                <!-- Основное меню -->
+                <div class="header-block">
+                    <a href="#">Доска объявлений</a>
+                    <a href="#">Сервисный центр</a>
+                    <a href="#">Интернет-магазин Dily.ru</a>
+                    <a href="#">Скупка</a>
+                </div>
+
+                <div class="user-controls">
+                            <div>
+                                <img src="./img/header/off.svg" alt="">
+                                    <select class="location">
+                                         <option value="">Москва</option>
+                                         <option value="">Благовещенск</option>
+                                         <option value="">Краснодар</option>
+                                     </select>
+                            </div>
+                            <div>
+                            <img src="./img/header/Vector.svg" alt="">
+                            <a href="#" class="login">Вход/Регистрация</a>
+                            </div>
+                </div>
+            </div>
+
+            <nav>
+                <div class="icon-actions">
+                    <div class="icon-item">
+                        <img src="./img/header/Group.svg" alt="Объявления">
+                        <span>Объявления</span>
+                    </div>
+                    <div class="icon-item">
+                        <img src="./img/header/shops.svg" alt="Магазины">
+                        <span>Магазины</span>
+                    </div>
+                    <div class="icon-item">
+                        <img src="./img/header/charity.svg" alt="Благотворительность">
+                        <span>Благотворительность</span>
+                    </div>
+                </div>
+        
+                <div class="search-bar">
+                    <form action="#" method="get">
+                        <img src="./img/header/search.svg" alt="">
+                        <input type="text" placeholder="Я хочу купить">
+                        <button type="submit">Найти</button>
+                    </form>
+                </div>
+                <div class="btn-pay">
+                    <a href="#" class="btn-green">Подать объявление </a>
+                    <div>+</div>
+                </div>
+            </nav>
+
+        
+    </header>
+    
+    <main>
+        <!-- Боковая панель -->
+        <aside class="sidebar">
+            <h2>Категории</h2>
+            <ul class="categories">
+                <li><a href="#">Смартфоны</a></li>
+                <li><a href="#">Мобильные телефоны</a></li>
+                <li><a href="#">Кнопочные телефоны</a></li>
+                <li><a href="#">Запчасти для мобильных телефонов</a></li>
+                <li><a href="#">Наушники и гарнитуры</a></li>
+                <li><a href="#">Зарядные устройства</a></li>
+            </ul>
+            <h3>Фильтры</h3>
+            <form class="filters">
+                <div class="filter-group">
+                    <label for="price">Цена</label>
+                    <input type="range" id="price" min="0" max="100000" step="1000">
+                </div>
+                <div class="filter-group">
+                    <h4>Формат покупки</h4>
+                    <label><input type="radio" name="format" value="all"> Все объявления</label><br>
+                    <label><input type="radio" name="format" value="auction"> Аукцион</label><br>
+                    <label><input type="radio" name="format" value="buy-now"> Купить сейчас</label>
+                </div>
+                <button type="submit">Применить</button>
+            </form>
+        </aside>
+
+        <!-- Секция объявлений -->
+        <section class="ads-section">
+            <h1>Телефоны и аксессуары</h1>
+            <div class="ads">
+                <!-- Пример одного объявления -->
+                <div class="ad-card">
+                    <img src="./img/Redmi.svg" alt="" class="ad-image">
+                    <div class="ad-info">
+                        <p class="ad-title">Xiaomi Redmi Note 8 pro</p>
+                        <p class="ad-price">10 000 ₽</p>
+                        <p class="ad-location">Москва</p>
+                    </div>
+                </div>
+                <!-- Повторить карточки -->
+                <div class="ad-card">
+                    <div class="ad-image"></div>
+                    <div class="ad-info">
+                        <p class="ad-title">iPhone 14</p>
+                        <p class="ad-price">69 999 ₽</p>
+                        <p class="ad-location">Санкт-Петербург</p>
+                    </div>
+                </div>
+                <!-- Добавить больше объявлений -->
+            </div>
+            <button class="load-more">Показать ещё</button>
+        </section>
+    </main>
+    
+</body>
+</html>
